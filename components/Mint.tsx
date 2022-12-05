@@ -152,7 +152,7 @@ export default function Mint() {
                 </div>
               )}
               <button
-                className="text-indigo-500 focus:outline-none focus:underline hover:underline"
+                className="text-indigo-500 focus:underline hover:underline"
                 onClick={() => ONE_DECIMAL_FOLD_BAL >= 100 ? setUserInput(ONE_DECIMAL_FOLD_BAL.toString()) : setUserInput(TWO_DECIMAL_FOLD_BAL.toString())}
               >
                 (Max)
@@ -241,7 +241,7 @@ export default function Mint() {
               </div>
             )}
             <button
-              className="text-indigo-500 focus:outline-none focus:underline hover:underline"
+              className="text-indigo-500 focus:outline-none hover:underline"
               onClick={() => ONE_DECIMAL_FOLD_BAL >= 100 ? setUserInput(ONE_DECIMAL_FOLD_BAL.toString()) : setUserInput(TWO_DECIMAL_FOLD_BAL.toString())}
             >
               (Max)

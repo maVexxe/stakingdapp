@@ -7,10 +7,10 @@ export default function Tabs() {
       <div className="flex flex-col gap-2 p-2 md:p-4 rounded-[28px] bg-dark-800 shadow-md relative w-full max-w-xl bg-grayish ">
         <Tab.Group>
           <Tab.List className="p-1 grid grid-cols-2 gap-4 items-center pb-2 text-white ">
-            <Tab className=" text-slate-300 text-lg font-light cursor-pointer hover:bg-fresh aria-selected:bg-fresh rounded-[14px] border border-fresh p-3">
+            <Tab className=" text-slate-300 text-lg font-light cursor-pointer hover:bg-fresh focus:outline-none aria-selected:bg-fresh rounded-[14px] border border-fresh p-3">
               Stake
             </Tab>
-            <Tab className="text-slate-300 text-lg font-light cursor-pointer hover:bg-fresh aria-selected:bg-fresh rounded-[14px] border border-fresh p-3">
+            <Tab className="text-slate-300 text-lg font-light cursor-pointer hover:bg-fresh focus:outline-none aria-selected:bg-fresh rounded-[14px] border border-fresh p-3">
               Withdraw
             </Tab>
           </Tab.List>

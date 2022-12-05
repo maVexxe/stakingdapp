@@ -143,7 +143,7 @@ export default function Burn() {
                 </div>
               )}
               <button
-                className="text-indigo-500 focus:outline-none focus:underline hover:underline"
+                className="text-indigo-500 focus:outline-none hover:underline"
                 onClick={() => ONE_DECIMAL_XFOLD_BAL >= 100 ? setUserInput(ONE_DECIMAL_XFOLD_BAL.toString()) : setUserInput(TWO_DECIMAL_XFOLD_BAL.toString()) }
               >
                 (Max)
@@ -232,7 +232,7 @@ export default function Burn() {
               </div>
             )}
             <button
-              className="text-indigo-500 focus:outline-none focus:underline hover:underline"
+              className="text-indigo-500 focus:outline-none hover:underline"
               onClick={() => ONE_DECIMAL_XFOLD_BAL >= 100 ? setUserInput(ONE_DECIMAL_XFOLD_BAL.toString()) : setUserInput(TWO_DECIMAL_XFOLD_BAL.toString())}
             >
               (Max)
