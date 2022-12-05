@@ -20,9 +20,14 @@ export default function Burn() {
   const [isHydrated, setIsHydrated] = useState(false);
   const DebouncedUserInput = useDebounce(UserInput, 500); //catches value 500ms after UserInput stops changing
   let USER_INPUT_AMOUNT;
-  if (parseFloat(DebouncedUserInput[0]) > 0.001) {
+  let UserInputNoDebounce;
+  if (parseFloat(DebouncedUserInput[0]) > 0.01) {
     USER_INPUT_AMOUNT = DebouncedUserInput[0];
     USER_INPUT_AMOUNT = ethers.utils.parseEther(USER_INPUT_AMOUNT);
+  }
+  if (parseFloat(UserInput) > 0.01) {
+    UserInputNoDebounce = UserInput;
+    UserInputNoDebounce = ethers.utils.parseEther(UserInputNoDebounce);
   }
 
   const parseUserInput = (e) => {
@@ -97,7 +102,7 @@ export default function Burn() {
   const { isLoading: isLoadingBurn } =
     useWaitForTransaction({ hash: BURNDATA?.hash });
 
-  if (parseFloat(USER_INPUT_AMOUNT) <= parseFloat(anyApprovalAmount)) { //burn
+  if (parseFloat(UserInputNoDebounce) <= parseFloat(anyApprovalAmount)) { //burn
     return (
       <>
         <div className="bg-blackish pb-2 pt-4 font-proxima border-dark-700 rounded-[14px] border border-fresh p-3 gap-4 text-white">
