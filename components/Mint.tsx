@@ -18,6 +18,7 @@ import {
 import { useDebounce } from "use-debounce";
 import Image from "next/image";
 import foldlogo from "../public/foldlogo.png";
+import { isMobile } from "react-device-detect";
 
 export default function Mint() {
   const { address: USER_ADDRESS, isConnected: isConnected } = useAccount();
@@ -145,9 +146,10 @@ export default function Mint() {
             />
             <div className="shrink-0 space-x-1 inline-flex pt-1 relative items-center">
               {isHydrated && (
-                <p className="text-gray-300">
-                  Balance: {ONE_DECIMAL_FOLD_BAL >= 100 ? ONE_DECIMAL_FOLD_BAL : TWO_DECIMAL_FOLD_BAL}
-                </p>
+                <div className="text-gray-300">
+                  {!isMobile && (<p> Balance: {ONE_DECIMAL_FOLD_BAL >= 100 ? ONE_DECIMAL_FOLD_BAL : TWO_DECIMAL_FOLD_BAL} </p> )}
+                  {isMobile && (<p> Bal: {ONE_DECIMAL_FOLD_BAL >= 100 ? ONE_DECIMAL_FOLD_BAL : TWO_DECIMAL_FOLD_BAL} </p> )}
+                </div>
               )}
               <button
                 className="text-indigo-500 focus:outline-none focus:underline hover:underline"
@@ -233,9 +235,10 @@ export default function Mint() {
           />
           <div className="shrink-0 space-x-1 inline-flex pt-1 relative items-center">
             {isHydrated && (
-              <p className="text-gray-300">
-                Balance: {ONE_DECIMAL_FOLD_BAL >= 100 ? ONE_DECIMAL_FOLD_BAL : TWO_DECIMAL_FOLD_BAL}
-              </p>
+              <div className="text-gray-300">
+                {!isMobile && (<p> Balance: {ONE_DECIMAL_FOLD_BAL >= 100 ? ONE_DECIMAL_FOLD_BAL : TWO_DECIMAL_FOLD_BAL} </p> )}
+                {isMobile && (<p> Bal: {ONE_DECIMAL_FOLD_BAL >= 100 ? ONE_DECIMAL_FOLD_BAL : TWO_DECIMAL_FOLD_BAL} </p> )}
+              </div>
             )}
             <button
               className="text-indigo-500 focus:outline-none focus:underline hover:underline"
