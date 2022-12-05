@@ -33,7 +33,8 @@
         modalbg: '#101A31',
         modalbtn: '#636C83',
         almostwhite: '#E4E5E8',
-        grayrose: '#342E48'
+        grayrose: '#342E48',
+        darkviol: '#231C3B'
       }
     }
 }

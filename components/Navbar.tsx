@@ -20,14 +20,14 @@ export default function Navigation() {
       <input type="checkbox" id="FAQMODAL" className="modal-toggle" />
       <label htmlFor="FAQMODAL" className="modal cursor-pointer">
         <label
-          className="relative bg-blackish ring-1 ring-blackish p-6 rounded-[12px] "
+          className="relative bg-blackish border border-grayrose p-6 rounded-[12px] "
           htmlFor=""
         >
-          <h3 className="text-lg font-proxima bg-grayrose rounded-md p-2 text-center text-almostwhite font-bold">
-            FAQ
+          <h3 className="text-2xl font-proxima rounded-md p-2 text-center text-almostwhite font-bold">
+            Frequently asked questions
           </h3>
           <ul className="space-y-6 text-lg text-white">
-            <li className="mt-9 p-2 rounded-lg border border-grayrose">
+            <li className="mt-9 p-2 rounded-lg border border-grayrose bg-grayrose">
               Where do tributes come from? <br /> &nbsp; -
               <a
                 className="hover:underline"
@@ -37,11 +37,11 @@ export default function Navigation() {
               </a>
             </li>
     
-            <li className="p-2 rounded-lg border border-grayrose">
+            <li className="p-2 rounded-lg border border-grayrose bg-grayrose">
               What is current yield? <br />
               <strong className="text-almostwhite"> &nbsp; - Theres no tribute distribution at the moment.</strong>
             </li>
-            <li className="p-2 rounded-lg border border-grayrose">
+            <li className="p-2 rounded-lg border border-grayrose bg-grayrose">
               Is there a lock on staking? <br /> <strong className="text-almostwhite"> &nbsp; - 24h. </strong>
             </li>
           </ul>
