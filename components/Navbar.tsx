@@ -23,30 +23,30 @@ export default function Navigation() {
           className="relative bg-blackish ring-1 ring-blackish p-6 rounded-[12px] "
           htmlFor=""
         >
-          <h3 className="text-xl bg-grayish rounded-md p-2 text-center text-almostwhite font-bold">
+          <h3 className="text-lg font-proxima bg-grayrose rounded-md p-2 text-center text-almostwhite font-bold">
             FAQ
           </h3>
-          <ul className="space-y-6 text-lg text-almostwhite">
-            <li className="mt-9 p-2 rounded-lg border border-indigo-800">
+          <ul className="space-y-6 text-lg text-white">
+            <li className="mt-9 p-2 rounded-lg border border-grayrose">
               Where do tributes come from? <br /> &nbsp; -
               <a
                 className="hover:underline"
                 href="https://kb.manifoldfinance.com/docs/general/general-token"
               >
-                <strong> Click me to view explanatory docs page. </strong>
+                <strong className="text-almostwhite"> Click me to view explanatory docs page. </strong>
               </a>
             </li>
     
-            <li className="p-2 rounded-lg border border-indigo-800">
+            <li className="p-2 rounded-lg border border-grayrose">
               What is current yield? <br />
-              <strong> &nbsp; - Theres no tribute distribution at the moment.</strong>
+              <strong className="text-almostwhite"> &nbsp; - Theres no tribute distribution at the moment.</strong>
             </li>
-            <li className="p-2 rounded-lg border border-indigo-800">
-              Is there a lock on staking? <br /> <strong> &nbsp; - 24h. </strong>
+            <li className="p-2 rounded-lg border border-grayrose">
+              Is there a lock on staking? <br /> <strong className="text-almostwhite"> &nbsp; - 24h. </strong>
             </li>
-            <hr className="border-gray-500 pb-4" />
           </ul>
-          <p className="text-sm font-semibold text-center">
+          <hr className="border-gray-700 mt-9 pb-4" />
+          <p className="text-sm text-gray-400 font-semibold text-center">
             Click outside to close
           </p>
         </label>
@@ -70,7 +70,7 @@ export default function Navigation() {
           {isHydrated && !isMobile &&
             <div className="flex md:order-2">
               {isHydrated && !isConnected ? (
-                <div className="text-almostwhite hover:bg-fresh border border-fresh font-medium text-light rounded-lg text-center mr-3 md:mr-0 ">
+                <div className="text-white hover:bg-fresh border border-fresh font-medium text-light rounded-lg text-center mr-3 md:mr-0 ">
                   <button
                     onClick={() => OpenWalletModal()}
                     className="px-[45px] py-3 text-center"
@@ -123,7 +123,7 @@ export default function Navigation() {
               )}
             </div>
           }
-          <div className="flex md:w-auto md:order-1 justify-center p-4 md:text-almostwhite text-white font-light rounded-lg flex-row md:space-x-8 md:border-0 md:bg-transparent">
+          <div className="flex md:w-auto md:order-1 justify-center p-4 text-white font-light rounded-lg flex-row md:space-x-8 md:border-0 md:bg-transparent">
             <p>
               <label
                 htmlFor="FAQMODAL"

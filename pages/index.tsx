@@ -9,6 +9,8 @@ export function App() {
       <ConnectWalletModal />
       <Head>
         <title>Manifold Finance</title>
+        <meta name="keywords" content="Manifold, Manifold Finance, manifold, manifold finance, manifold staking, manifold dapp, staking manifold, fold staking, mainfold finance, mainfold staking"/>
+        <meta name="description" content="Manifold Finance Staking Dapp" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Navigation />
