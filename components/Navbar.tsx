@@ -63,7 +63,7 @@ export default function Navigation() {
                 height="48"
               />
               }
-            <span className="self-center md:ml-0.5 md:text-almostwhite font-light md:font-light text-white text-2xl font-proxima whitespace-nowrap ">
+            <span className="self-center md:ml-0.5 text-white font-light md:font-light text-2xl font-proxima whitespace-nowrap ">
               Manifold Finance
             </span>
           </a>
