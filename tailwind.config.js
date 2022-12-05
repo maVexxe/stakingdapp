@@ -32,7 +32,7 @@
         slate: 'rgb(5,13,32)',
         modalbg: '#101A31',
         modalbtn: '#636C83',
-        almostwhite: '#E4E5E8'
+        almostwhite: '#E4E5E8',
       }
     }
 }

@@ -27,8 +27,8 @@ export default function Navigation() {
             FAQ
           </h3>
           <ul className="space-y-6 text-lg text-almostwhite">
-            <li className="pt-8">
-              Where do tributes come from? <br /> -
+            <li className="mt-9 p-2 rounded-lg border border-indigo-800">
+              Where do tributes come from? <br /> &nbsp; -
               <a
                 className="hover:underline"
                 href="https://kb.manifoldfinance.com/docs/general/general-token"
@@ -36,12 +36,13 @@ export default function Navigation() {
                 <strong> Click me to view explanatory docs page. </strong>
               </a>
             </li>
-            <li>
+    
+            <li className="p-2 rounded-lg border border-indigo-800">
               What is current yield? <br />
-              <strong> - Theres no tribute distribution at the moment.</strong>
+              <strong> &nbsp; - Theres no tribute distribution at the moment.</strong>
             </li>
-            <li>
-              Is there a lock on staking? <br /> <strong> - 24h. </strong>
+            <li className="p-2 rounded-lg border border-indigo-800">
+              Is there a lock on staking? <br /> <strong> &nbsp; - 24h. </strong>
             </li>
             <hr className="border-gray-500 pb-4" />
           </ul>
