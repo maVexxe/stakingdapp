@@ -7,13 +7,13 @@ import WalletConnectLogo from "../svgs/WalletConnectLogo";
 export default function ConnectWalletModal() {
   const { connect, connectors, error, isLoading } = useConnect();
   function CloseWalletModal() {
-    const input = document.getElementById("my-modal-5") as HTMLInputElement;
+    const input = document.getElementById("connectmodal") as HTMLInputElement;
     input.checked = false;
   }
   return (
     <>
-      <input type="checkbox" id="my-modal-5" className="modal-toggle" />
-      <label htmlFor="my-modal-5" className="modal cursor-pointer">
+      <input type="checkbox" id="connectmodal" className="modal-toggle" />
+      <label htmlFor="connectmodal" className="modal cursor-pointer">
         <div className="grid col-auto font-proxima p-6 bg-blackish border text-white border-gray-700 rounded-[24px]">
           <label className="text-2xl md:px-24 px-16 whitespace-nowrap rounded-[12px] font-proxima pb-6 text-almostwhite font-bold p-1">
             <p> Select a wallet </p>

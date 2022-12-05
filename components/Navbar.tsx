@@ -10,7 +10,7 @@ export default function Navigation() {
     setIsHydrated(true);
   }, []);
   function OpenWalletModal() {
-    const input = document.getElementById("my-modal-5") as HTMLInputElement;
+    const input = document.getElementById("connectmodal") as HTMLInputElement;
     input.checked = true;
   }
   const { address: USER_ADDRESS, isConnected: isConnected } = useAccount();
